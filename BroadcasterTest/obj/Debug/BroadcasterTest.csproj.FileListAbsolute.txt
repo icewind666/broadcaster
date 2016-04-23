@@ -1,0 +1,29 @@
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe.config
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.pdb
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.csprojResolveAssemblyReference.cache
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.Form1.resources
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.Properties.Resources.resources
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.csproj.GenerateResource.Cache
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.exe
+c:\users\korennoy-va\documents\visual studio 2012\Projects\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.pdb
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe.config
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.exe
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.pdb
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.pdb
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.csprojResolveAssemblyReference.cache
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.Properties.Resources.resources
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.csproj.GenerateResource.Cache
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.MainForm.resources
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\NAudio.dll
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\NAudio.WindowsMediaFormat.dll
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\bin\Debug\NAudio.xml
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe.config
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.exe
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.pdb
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.exe
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\bin\Debug\BroadcasterTest.pdb
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.MainForm.resources
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.Properties.Resources.resources
+E:\Distib\VisualStudioProjects\CSharp\A_Other\BroadcasterTest\BroadcasterTest\BroadcasterTest\obj\Debug\BroadcasterTest.csproj.GenerateResource.Cache

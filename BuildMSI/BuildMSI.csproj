@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BAE6AB64-642C-432F-8DF7-731540408DC2}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BuildMSI</RootNamespace>
+    <AssemblyName>BuildMSI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WixSharp, Version=1.0.23.0, Culture=neutral, PublicKeyToken=3775edd25acc43c2, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>WixSharp\WixSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Setup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="PENTESTIT_banner.bmp" />
+    <Content Include="WixSharp\cscs.exe" />
+    <Content Include="WixSharp\license.txt" />
+    <Content Include="WixSharp\nbsbuilder.exe" />
+    <Content Include="WixSharp\readme.txt" />
+    <Content Include="WixSharp\WixSharp.dll" />
+    <Content Include="WixSharp\WixSharp.Lab.dll" />
+    <Content Include="WixSharp\WixSharp.Lab.xml" />
+    <Content Include="WixSharp\WixSharp.Msi.dll" />
+    <Content Include="WixSharp\WixSharp.Msi.xml" />
+    <Content Include="WixSharp\WixSharp.UI.dll" />
+    <Content Include="WixSharp\WixSharp.UI.xml" />
+    <Content Include="WixSharp\WixSharp.xml" />
+    <Content Include="WixSharp\Wix_bin\bin\candle.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\dark.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\heat.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\IncludeFile.ico" />
+    <Content Include="WixSharp\Wix_bin\bin\insignia.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\light.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\lit.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\LocalizationFile.ico" />
+    <Content Include="WixSharp\Wix_bin\bin\lux.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\LuxTasks.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\melt.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\mergemod.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Deployment.Compression.Cab.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Deployment.Compression.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Deployment.Resources.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Deployment.WindowsInstaller.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Deployment.WindowsInstaller.Package.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\Microsoft.Tools.WindowsInstallerXml.NAntTasks.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\mspatchc.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\nit.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\ProductFile.ico" />
+    <Content Include="WixSharp\Wix_bin\bin\ProjectFile.ico" />
+    <Content Include="WixSharp\Wix_bin\bin\pyro.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\sconce2010.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\setup.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\setupbld.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\SetupBuilder.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\shine.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\smoke.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\ThmViewer.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\torch.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\votive2010.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\wconsole.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\winterop.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\wix.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixBalExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixComPlusExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixCop.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\WixDependencyExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixDifxAppExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixDirectXExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixFirewallExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixGamingExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixIIsExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixLibraryFile.ico" />
+    <Content Include="WixSharp\Wix_bin\bin\WixLuxExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixMsmqExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixNetFxExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixPSExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixSqlExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixTagExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixTasks.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixUIExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixUnit.exe" />
+    <Content Include="WixSharp\Wix_bin\bin\WixUtilExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\WixVSExtension.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\wui.dll" />
+    <Content Include="WixSharp\Wix_bin\bin\x86\burn.exe" />
+    <Content Include="WixSharp\Wix_bin\SDK\BootstrapperCore.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\BootstrapperCore.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\DocCompiler.exe" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\aclutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\apuputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\atomutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\BalBaseBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\balcondition.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\balinfo.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\balretry.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\balutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\buffutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\butil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\cabcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\cabutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\certutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\conutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\cryputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\custommsierrors.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\deputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\dictutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\dirutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\dlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\dutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\eseutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\fileutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\gdiputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\IBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\IBootstrapperBAFunction.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\IBootstrapperEngine.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\iis7util.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\inetutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\iniutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\jsonutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\locutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\logutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\memutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\metautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\osutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\pathutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\perfutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\polcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\procutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\regutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\resrutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\reswutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\rexutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\rmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\rssutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\sceutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\shelutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\sqlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\srputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\strutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\svcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\thmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\timeutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\uriutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\userutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wcalog.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wcautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wcawow64.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wcawrapquery.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wiutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\wuautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\inc\xmlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\MakeSfxCA.exe" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.Cab.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.Cab.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.Zip.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Compression.Zip.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Resources.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.Resources.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.Linq.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.Linq.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.Package.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.Package.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\Microsoft.Deployment.WindowsInstaller.xml" />
+    <Content Include="WixSharp\Wix_bin\SDK\MsgGen.exe" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\aclutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\apuputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\atomutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\BalBaseBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\balcondition.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\balinfo.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\balretry.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\balutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\buffutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\butil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\cabcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\cabutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\certutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\conutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\cryputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\custommsierrors.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\deputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\dictutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\dirutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\dlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\dutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\eseutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\fileutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\gdiputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\IBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\IBootstrapperBAFunction.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\IBootstrapperEngine.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\iis7util.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\inetutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\iniutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\jsonutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\locutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\logutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\memutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\metautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\osutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\pathutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\perfutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\polcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\procutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\regutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\resrutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\reswutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\rexutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\rmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\rssutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\sceutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\shelutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\sqlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\srputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\strutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\svcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\thmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\timeutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\uriutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\userutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wcalog.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wcautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wcawow64.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wcawrapquery.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wiutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\wuautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2010\inc\xmlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\aclutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\apuputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\atomutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\BalBaseBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\balcondition.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\balinfo.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\balretry.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\balutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\buffutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\butil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\cabcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\cabutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\certutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\conutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\cryputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\custommsierrors.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\deputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\dictutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\dirutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\dlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\dutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\eseutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\fileutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\gdiputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\IBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\IBootstrapperBAFunction.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\IBootstrapperEngine.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\iis7util.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\inetutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\iniutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\jsonutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\locutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\logutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\memutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\metautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\osutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\pathutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\perfutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\polcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\procutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\regutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\resrutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\reswutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\rexutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\rmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\rssutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\sceutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\shelutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\sqlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\srputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\strutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\svcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\thmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\timeutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\uriutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\userutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wcalog.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wcautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wcawow64.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wcawrapquery.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wiutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\wuautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2012\inc\xmlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\aclutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\apuputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\atomutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\BalBaseBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\balcondition.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\balinfo.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\balretry.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\balutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\buffutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\butil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\cabcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\cabutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\certutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\conutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\cryputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\custommsierrors.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\deputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\dictutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\dirutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\dlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\dutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\eseutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\fileutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\gdiputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\IBootstrapperApplication.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\IBootstrapperBAFunction.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\IBootstrapperEngine.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\iis7util.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\inetutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\iniutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\jsonutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\locutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\logutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\memutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\metautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\osutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\pathutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\perfutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\polcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\procutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\regutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\resrutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\reswutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\rexutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\rmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\rssutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\sceutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\shelutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\sqlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\srputil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\strutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\svcutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\thmutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\timeutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\uriutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\userutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wcalog.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wcautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wcawow64.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wcawrapquery.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wiutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\wuautil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\VS2013\inc\xmlutil.h" />
+    <Content Include="WixSharp\Wix_bin\SDK\x64\sfxca.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\x86\sfxca.dll" />
+    <Content Include="WixSharp\Wix_bin\SDK\XsdGen.exe" />
+    <Content Include="WixSharp\Wix_bin\SDK\XsdStitch.exe" />
+    <Content Include="WixSharp\Wix_bin\version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config.bin" />
+    <None Include="events.log" />
+    <None Include="License.rtf" />
+    <None Include="WixSharp\install.cmd" />
+    <None Include="WixSharp\uninstall.cmd" />
+    <None Include="WixSharp\WixSharp.Reference.chm" />
+    <None Include="WixSharp\Wix_bin\bin\candle.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\darice.cub" />
+    <None Include="WixSharp\Wix_bin\bin\dark.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\difxapp_ia64.wixlib" />
+    <None Include="WixSharp\Wix_bin\bin\difxapp_x64.wixlib" />
+    <None Include="WixSharp\Wix_bin\bin\difxapp_x86.wixlib" />
+    <None Include="WixSharp\Wix_bin\bin\heat.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\insignia.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\light.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\lit.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\lux.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\melt.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\mergemod.cub" />
+    <None Include="WixSharp\Wix_bin\bin\nit.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\pyro.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\shine.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\smoke.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\torch.exe.config" />
+    <None Include="WixSharp\Wix_bin\bin\WixUnit.exe.config" />
+    <None Include="WixSharp\Wix_bin\SDK\BootstrapperCore.config" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2005.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2005_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2005_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2008.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2008_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2008_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2010.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2010_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\dutil_2010_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2005.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2005_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2005_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2008.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2008_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2008_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2010.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2010_ia64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\lib\wcautil_2010_x64.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\MakeSfxCA.exe.config" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x64\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x64\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x64\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x86\balutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x86\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x86\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2010\lib\x86\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x64\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x64\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x64\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x86\balutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x86\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x86\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2012\lib\x86\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x64\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x64\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x64\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x86\balutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x86\deputil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x86\dutil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\VS2013\lib\x86\wcautil.lib" />
+    <None Include="WixSharp\Wix_bin\SDK\wix.ca.targets" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
